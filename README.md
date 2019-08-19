@@ -7,12 +7,12 @@ This includes code and art and cab and fab files.  All the things.
 
 This is the file structure of this repository
 
-* eda - Electronic Design Automation files for the badge PCB (EDA is KiCad)
-  * proto - KiCad 5.x project folder for prototype boards
-  * BSidesDFW_2019_Badge - KiCad 5.x project folder for the badge
-* code - Code for programming the badge
-* docs - Documentation created by this project related to the badge
-* graphics - Artwork and other graphics created by this project for the badge
-  * fonts - Truetype fonts used in Illustrator files
-* reference - Documentation pulled from other sources related to the badge components
-
+* [/](/) - YOU ARE HERE
+* [/eda/](/eda/) - Electronic Design Automation files for the badge PCB (EDA is KiCad)
+  * ./proto/ - KiCad 5.x project folder for prototype boards
+  * ./BSidesDFW_2019/ - KiCad 5.x project folder for the BSidesDFW 2019 badge
+* [/code/](/code/) - Code for programming the badge
+* [/docs/](/docs/) - Documentation created by this project related to the badge
+* [/graphics/](/graphics/) - Artwork and other graphics created by this project for the badge
+  * ./fonts/ - Truetype fonts used in Illustrator files
+* [/reference/](/reference/) - Documentation pulled from other sources related to the badge components

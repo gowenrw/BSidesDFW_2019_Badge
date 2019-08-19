@@ -7,7 +7,7 @@ This includes code and art and cab and fab files.  All the things.
 
 This is the file structure of this repository
 
-* [/](./README.md) - YOU ARE HERE
+* [/](//) - YOU ARE HERE
 * [/eda/](./eda/) - Electronic Design Automation files for the badge PCB (EDA is KiCad)
   * ./proto/ - KiCad 5.x project folder for prototype boards
   * ./BSidesDFW_2019/ - KiCad 5.x project folder for the BSidesDFW 2019 badge

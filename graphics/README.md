@@ -6,5 +6,5 @@ This is where all the Artwork and other graphics created by this project for the
 
 This is the file structure of this repository
 
-* [/](/) - Home
-* [/graphics/](/graphics/) - YOU ARE HERE
+* [/](.) - Home
+* [/graphics/](./graphics/) - YOU ARE HERE

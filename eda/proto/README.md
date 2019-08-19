@@ -6,7 +6,7 @@ This is where all the KiCad 5.x files related to the prototypes made for the bad
 
 This is the file structure of this repository
 
-* [/](.) - Home
+* [/](../../) - Home
 * [/eda](./eda/) - Electronic Design Automation files for the badge PCB (EDA is KiCad)
   * [/eda/proto/](./eda/proto/) - YOU ARE HERE
     * ./<filename>.pro - project file. Holds parameters that apply to the entire project (schematic and PCB layout).

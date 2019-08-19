@@ -6,7 +6,7 @@ This is where all the files related to code and/or firmware for the badge.
 
 This is the file structure of this repository
 
-* [/](/README.md) - Home
+* [/](../) - Home
 * [/code/](./code/) - YOU ARE HERE
 
 For now the type of code needed will be up in the air until we choose a microcontroller.

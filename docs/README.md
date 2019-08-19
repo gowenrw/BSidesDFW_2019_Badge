@@ -6,5 +6,5 @@ Documentation created by this project related to the badge
 
 This is the file structure of this repository
 
-* [/](.) - Home
+* [/](../) - Home
 * [/docs/](./docs/) - YOU ARE HERE

@@ -7,7 +7,7 @@ The EDA used for this badge is KiCad 5.x
 
 This is the file structure of this repository
 
-* [/](.) - Home
+* [/](../) - Home
 * [/eda](./eda/) - YOU ARE HERE
   * [/eda/proto/](./eda/proto/) - KiCad 5.x project folder for prototype boards
     * ./3d_models/ - This directory contains footprint 3d model files

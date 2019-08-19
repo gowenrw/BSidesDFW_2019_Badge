@@ -6,5 +6,9 @@ This is where all the files related to code and/or firmware for the badge.
 
 This is the file structure of this repository
 
-* [/](.) - Home
+* [/](./README.md) - Home
 * [/code/](./code/) - YOU ARE HERE
+
+For now the type of code needed will be up in the air until we choose a microcontroller.
+
+The CH552G is first up for consideration and uses a stripped down C code with SDCC to implement.

@@ -6,5 +6,6 @@ Documentation pulled from other sources related to the badge components
 
 This is the file structure of this repository
 
-* [/](/) - Home
+* [/](/README.md) - Home
 * [/reference/](/reference/) - YOU ARE HERE
+  * [/reference/ch55x/](/reference/ch55x/) - Reference Materials related to the CH55x micro-controller.

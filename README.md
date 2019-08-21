@@ -19,3 +19,11 @@ This is the file structure of this repository
 * ./IDEAS.md - For brainstorming on ideas
 * ./README.md - This File
 * ./LICENSE - Currently set to MIT but open to changing it
+
+## Collaboration Chat
+
+We will be using Mattermost for collaboration chat on this project.
+Here is the link to join that server:
+
+https://blackmarble.sh/chat/signup_user_complete/?id=hdrwu9qwobyojr6x53obxhmmtr
+

@@ -43,7 +43,7 @@ Thumbs.db
 *~
 
 # ###################################################################
-# C/SDCC Compiler generated files 
+# C/SDCC Compiler generated files
 # ###################################################################
 
 # Prerequisites
@@ -57,8 +57,15 @@ Thumbs.db
 
 # Linker output
 *.ilk
+*.lk
+*.lst
 *.map
 *.exp
+*.rst
+*.sym
+*.rel
+*.ihx
+*.mem
 
 # Precompiled Headers
 *.gch
@@ -84,6 +91,8 @@ Thumbs.db
 *.x86_64
 *.hex
 *.com
+*.bin
+*.asm
 
 # Debug files
 *.dSYM/
@@ -99,4 +108,3 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-

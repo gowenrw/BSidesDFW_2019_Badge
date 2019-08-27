@@ -8,6 +8,7 @@ This is the file structure of this repository
 
 * [/](/README.md) - Home
 * [/code/](/code/) - YOU ARE HERE
+* [/code/ugly_dev_board/](/code/ugly_dev_board/) - Code for the Ugly Dev Board CH552G
 
 ## General Notes
 
@@ -105,5 +106,11 @@ git clone https://github.com/rgwan/librech551.git
 * You should see two files there, a Makefile and a main.c file.
 * Type ```make``` in this directory and it should compile the ```wchisptool``` executable.  If it does not then read the errors to see what is wrong and try again until it compiles without error (warnings are usually ok as long as the executable is produced).
 * Once you have a successful compilation type ```make install``` in order to install the program. (you might have to use ```sudo``` with this if you get a permission denied error)
+* To download code to the chip use the following:
+```
+sudo wchisptool -f mycode.bin
+```
 
-To be continued...
+At this point you should be able to upload code to the micro controller.
+
+NOTE: The linux wchisptool is hit or miss on working.  Have had quite a few issues with it and am looking for an alternative.

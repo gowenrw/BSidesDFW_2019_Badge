@@ -72,7 +72,6 @@ Thumbs.db
 *.pch
 
 # Libraries
-*.lib
 *.a
 *.la
 *.lo

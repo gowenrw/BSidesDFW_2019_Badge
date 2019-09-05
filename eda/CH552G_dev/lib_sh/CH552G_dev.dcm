@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CH552G
+D microcontroller, USB, SOP-16, SOP16, SOIC-16, 8-bit
+K 8-bit microcontroller with USB Interface 256B iRAM and 1KB xRAM
+F https://datasheet.lcsc.com/szlcsc/1812131556_Jiangsu-Qin-Heng-CH552G_C111292.pdf
+$ENDCMP
+#
+$CMP R_1206
+D Resistor SMD 1206
+K R res resistor 1206
+F ~
+$ENDCMP
+#
+#End Doc Library

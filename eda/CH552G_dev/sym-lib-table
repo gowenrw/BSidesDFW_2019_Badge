@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name CH552G_dev)(type Legacy)(uri ${KIPRJMOD}/lib_sh/CH552G_dev.lib)(options "")(descr "CH552G development schematics"))
+)

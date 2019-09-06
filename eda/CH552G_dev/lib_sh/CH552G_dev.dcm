@@ -6,10 +6,33 @@ K 8-bit microcontroller with USB Interface 256B iRAM and 1KB xRAM
 F https://datasheet.lcsc.com/szlcsc/1812131556_Jiangsu-Qin-Heng-CH552G_C111292.pdf
 $ENDCMP
 #
+$CMP C_1206
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP LED_1206
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
 $CMP R_1206
 D Resistor SMD 1206
 K R res resistor 1206
 F ~
+$ENDCMP
+#
+$CMP TS2306A
+D Tactile Switches SPST 3.00mm x 2.00mm 0.60mm 10mA @ 5VDC SMD RoHS
+F https://datasheet.lcsc.com/szlcsc/1904241742_SHOU-HAN-TS2306A-240gf-MSM-9_C388290.pdf
+$ENDCMP
+#
+$CMP USB_B_Micro
+D USB B Micro Connector from Jing Extension of the Electronic Co.
+K USB Micro Connector
+F https://datasheet.lcsc.com/szlcsc/Jing-Extension-of-the-Electronic-Co-LCSC-micro-5PAll-posts-are-not-guided-Flat-welding-High-temperature_C77238.pdf
 $ENDCMP
 #
 #End Doc Library

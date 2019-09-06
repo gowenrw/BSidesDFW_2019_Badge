@@ -24,3 +24,4 @@ This is the file structure of this repository
     * [./gerber/](/eda/CH552G_dev/gerber/) - This directory contains gerber formatted files for manufacturing
     * [./lib_fp/](/eda/CH552G_dev/lib_fp/) - This directory contains footprint module directories
     * [./lib_sh/](/eda/CH552G_dev/lib_sh/) - This directory contains schematic library files
+    * [./pdf/](/eda/CH552G_dev/pdf/) - This directory contains pdf prints of schematics and cad files

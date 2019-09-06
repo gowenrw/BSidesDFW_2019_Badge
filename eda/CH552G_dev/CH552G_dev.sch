@@ -1,4 +1,647 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:CH552G_dev-cache
+EELAYER 29 0
 EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "CH552G Development Board"
+Date "2019-09-06"
+Rev ""
+Comp "Design by @alt_bier (a.k.a. Richard Gowen)"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CH552G_dev:CH552G IC1
+U 1 1 5D725E9E
+P 5800 3400
+F 0 "IC1" H 5800 4097 79  0000 C CNB
+F 1 "CH552G" H 5800 3984 50  0000 C CNB
+F 2 "CH552G_dev:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5000 2350 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1812131556_Jiangsu-Qin-Heng-CH552G_C111292.pdf" H 5450 4200 50  0001 C CNN
+	1    5800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:USB_B_Micro J1
+U 1 1 5D726825
+P 6300 1650
+F 0 "J1" H 6357 2117 50  0000 C CNN
+F 1 "USB_B_Micro" H 6357 2026 50  0001 C CNN
+F 2 "CH552G_dev:USB_Micro-B_Jing" V 6000 1600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Jing-Extension-of-the-Electronic-Co-LCSC-micro-5PAll-posts-are-not-guided-Flat-welding-High-temperature_C77238.pdf" H 6450 1600 50  0001 C CNN
+F 4 "USB_B_Micro" H 6357 2026 50  0000 C CNN "Package"
+	1    6300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:C_1206 C1
+U 1 1 5D72BE75
+P 8750 3200
+F 0 "C1" H 8635 3109 50  0000 R CNN
+F 1 "0.1uF/100nF" H 8635 3200 50  0000 R CNN
+F 2 "CH552G_dev:C_1206_3216Metric" V 8938 3150 50  0001 C CNN
+F 3 "~" H 8750 3200 50  0001 C CNN
+F 4 "1206" H 8635 3291 50  0000 R CNN "Package"
+	1    8750 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CH552G_dev:LED_1206 D32
+U 1 1 5D72C526
+P 2750 2950
+F 0 "D32" H 2750 3150 50  0000 C CNN
+F 1 "Blue" H 2750 3050 50  0000 C CNN
+F 2 "CH552G_dev:LED_1206_3216Metric" H 2750 2700 50  0001 C CNN
+F 3 "~" H 2750 2950 50  0001 C CNN
+F 4 "1206" H 2800 2850 50  0000 C CNN "Package"
+	1    2750 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 3550 2    50   Input ~ 0
+D-
+Text GLabel 6900 1750 2    50   Input ~ 0
+D-
+Wire Wire Line
+	7150 3550 7300 3550
+Text GLabel 7300 3750 2    50   Input ~ 0
+D+
+Wire Wire Line
+	7150 3750 7300 3750
+Text GLabel 6900 1650 2    50   Input ~ 0
+D+
+Text GLabel 7850 3350 2    50   Input ~ 0
+GND
+Text GLabel 6900 2150 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6300 2050 6300 2150
+Wire Wire Line
+	6200 2050 6200 2150
+Wire Wire Line
+	6200 2150 6300 2150
+Connection ~ 6300 2150
+Text GLabel 7850 3150 2    50   Input ~ 0
+VCC
+Text GLabel 6900 1450 2    50   Input ~ 0
+VCC
+Text GLabel 7850 2950 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	7150 3150 7700 3150
+Wire Wire Line
+	7150 3350 7700 3350
+$Comp
+L CH552G_dev:C_1206 C2
+U 1 1 5D740915
+P 9550 3200
+F 0 "C2" H 9435 3109 50  0000 R CNN
+F 1 "0.1uF/100nF" H 9435 3200 50  0000 R CNN
+F 2 "CH552G_dev:C_1206_3216Metric" V 9738 3150 50  0001 C CNN
+F 3 "~" H 9550 3200 50  0001 C CNN
+F 4 "1206" H 9435 3291 50  0000 R CNN "Package"
+	1    9550 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 3350 7700 3500
+Connection ~ 7700 3350
+Wire Wire Line
+	7700 3350 7850 3350
+Wire Wire Line
+	7700 3500 8750 3500
+Wire Wire Line
+	8750 3500 8750 3350
+Wire Wire Line
+	9550 3350 9550 3500
+Wire Wire Line
+	9550 3500 8750 3500
+Connection ~ 8750 3500
+Wire Wire Line
+	7700 3150 7700 3050
+Wire Wire Line
+	7700 3050 8750 3050
+Connection ~ 7700 3150
+Wire Wire Line
+	7700 3150 7850 3150
+Wire Wire Line
+	7700 2950 7700 2850
+Wire Wire Line
+	7700 2850 9550 2850
+Wire Wire Line
+	9550 2850 9550 3050
+Connection ~ 7700 2950
+Wire Wire Line
+	7700 2950 7850 2950
+Wire Wire Line
+	6900 1450 6600 1450
+Wire Wire Line
+	6900 1650 6750 1650
+Wire Wire Line
+	6900 1750 6600 1750
+Wire Wire Line
+	6750 1650 6750 1550
+Connection ~ 6750 1650
+Wire Wire Line
+	6750 1650 6600 1650
+Wire Wire Line
+	7150 2950 7700 2950
+Wire Wire Line
+	7700 1850 7700 2000
+Wire Wire Line
+	7700 2600 7700 2850
+Connection ~ 7700 2850
+Wire Wire Line
+	6300 2150 6900 2150
+Wire Wire Line
+	6750 1550 7700 1550
+$Comp
+L CH552G_dev:TS2306A SW1
+U 1 1 5D759335
+P 7700 2600
+F 0 "SW1" V 8046 2550 50  0000 R CNN
+F 1 "TS2306A" V 7955 2550 50  0001 R CNN
+F 2 "CH552G_dev:TS2306A240GFMSM9_C388290" H 8000 2400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1904241742_SHOU-HAN-TS2306A-240gf-MSM-9_C388290.pdf" H 8000 2300 50  0001 C CNN
+F 4 "Tactile Switches SPST 3.00mm x 2.00mm 0.60mm 10mA @ 5VDC SMD RoHS" H 8000 2200 50  0001 C CNN "Description"
+F 5 "1" H 8000 2100 50  0001 C CNN "Height"
+F 6 "Shou Han" H 8000 2000 50  0001 C CNN "Manufacturer_Name"
+F 7 "TS2306A-240GF-MSM-9_C388290" H 8000 1900 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "TS2306A" V 7955 2550 50  0000 R CNN "Package"
+	1    7700 2600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7300 3950 2    50   Input ~ 0
+P3.4
+Text GLabel 7300 4150 2    50   Input ~ 0
+P3.3
+Text GLabel 7300 4350 2    50   Input ~ 0
+P1.1
+Text GLabel 4300 4350 0    50   Input ~ 0
+P3.0
+Text GLabel 4300 4150 0    50   Input ~ 0
+P3.1
+Text GLabel 4300 3950 0    50   Input ~ 0
+RST
+Text GLabel 4300 3750 0    50   Input ~ 0
+P1.7
+Text GLabel 4300 3550 0    50   Input ~ 0
+P1.6
+Text GLabel 4300 3350 0    50   Input ~ 0
+P1.5
+Text GLabel 4300 3150 0    50   Input ~ 0
+P1.4
+Text GLabel 4300 2950 0    50   Input ~ 0
+P3.2
+Wire Wire Line
+	7150 3950 7300 3950
+Wire Wire Line
+	7150 4150 7300 4150
+Wire Wire Line
+	7150 4350 7300 4350
+Wire Wire Line
+	4300 4350 4450 4350
+Wire Wire Line
+	4300 4150 4450 4150
+Wire Wire Line
+	4300 3950 4450 3950
+Wire Wire Line
+	4300 3750 4450 3750
+Wire Wire Line
+	4300 3550 4450 3550
+Wire Wire Line
+	4300 3350 4450 3350
+Wire Wire Line
+	4300 3150 4450 3150
+Wire Wire Line
+	4300 2950 4450 2950
+$Comp
+L CH552G_dev:R_1206 R1
+U 1 1 5D74F7F9
+P 7700 1700
+F 0 "R1" H 7770 1791 50  0000 L CNN
+F 1 "10k ohms" H 7770 1700 50  0000 L CNN
+F 2 "CH552G_dev:R_1206_3216Metric" V 7830 1650 50  0001 C CNN
+F 3 "~" H 7650 1700 50  0001 C CNN
+F 4 "1206" H 7770 1609 50  0000 L CNN "Package"
+	1    7700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:R_1206 R32
+U 1 1 5D763AB2
+P 3300 2950
+F 0 "R32" V 3500 2950 50  0000 C CNN
+F 1 "330 ohms" V 3400 2950 50  0000 C CNN
+F 2 "CH552G_dev:R_1206_3216Metric" V 3430 2900 50  0001 C CNN
+F 3 "~" H 3250 2950 50  0001 C CNN
+F 4 "1206" V 3200 2950 50  0000 C CNN "Package"
+	1    3300 2950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3650 2950 2    50   Input ~ 0
+P3.2
+Wire Wire Line
+	3450 2950 3650 2950
+Wire Wire Line
+	2900 2950 3150 2950
+Text GLabel 2450 2950 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2600 2950 2450 2950
+$Comp
+L CH552G_dev:LED_1206 D14
+U 1 1 5D77373D
+P 1100 3150
+F 0 "D14" H 1100 3350 50  0000 C CNN
+F 1 "Red" H 1100 3250 50  0000 C CNN
+F 2 "CH552G_dev:LED_1206_3216Metric" H 1100 2900 50  0001 C CNN
+F 3 "~" H 1100 3150 50  0001 C CNN
+F 4 "1206" H 1150 3050 50  0000 C CNN "Package"
+	1    1100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:R_1206 R14
+U 1 1 5D773744
+P 1650 3150
+F 0 "R14" V 1850 3150 50  0000 C CNN
+F 1 "330 ohms" V 1750 3150 50  0000 C CNN
+F 2 "CH552G_dev:R_1206_3216Metric" V 1780 3100 50  0001 C CNN
+F 3 "~" H 1600 3150 50  0001 C CNN
+F 4 "1206" V 1550 3150 50  0000 C CNN "Package"
+	1    1650 3150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2000 3150 2    50   Input ~ 0
+P1.4
+Wire Wire Line
+	1800 3150 2000 3150
+Wire Wire Line
+	1250 3150 1500 3150
+Text GLabel 800  3150 0    50   Input ~ 0
+GND
+Wire Wire Line
+	950  3150 800  3150
+$Comp
+L CH552G_dev:LED_1206 D15
+U 1 1 5D77BCEF
+P 2750 3350
+F 0 "D15" H 2750 3550 50  0000 C CNN
+F 1 "Red" H 2750 3450 50  0000 C CNN
+F 2 "CH552G_dev:LED_1206_3216Metric" H 2750 3100 50  0001 C CNN
+F 3 "~" H 2750 3350 50  0001 C CNN
+F 4 "1206" H 2800 3250 50  0000 C CNN "Package"
+	1    2750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:R_1206 R15
+U 1 1 5D77BCF6
+P 3300 3350
+F 0 "R15" V 3500 3350 50  0000 C CNN
+F 1 "330 ohms" V 3400 3350 50  0000 C CNN
+F 2 "CH552G_dev:R_1206_3216Metric" V 3430 3300 50  0001 C CNN
+F 3 "~" H 3250 3350 50  0001 C CNN
+F 4 "1206" V 3200 3350 50  0000 C CNN "Package"
+	1    3300 3350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3650 3350 2    50   Input ~ 0
+P1.5
+Wire Wire Line
+	3450 3350 3650 3350
+Wire Wire Line
+	2900 3350 3150 3350
+Text GLabel 2450 3350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2600 3350 2450 3350
+$Comp
+L CH552G_dev:LED_1206 D16
+U 1 1 5D77BD02
+P 1100 3550
+F 0 "D16" H 1100 3750 50  0000 C CNN
+F 1 "Red" H 1100 3650 50  0000 C CNN
+F 2 "CH552G_dev:LED_1206_3216Metric" H 1100 3300 50  0001 C CNN
+F 3 "~" H 1100 3550 50  0001 C CNN
+F 4 "1206" H 1150 3450 50  0000 C CNN "Package"
+	1    1100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:R_1206 R16
+U 1 1 5D77BD09
+P 1650 3550
+F 0 "R16" V 1850 3550 50  0000 C CNN
+F 1 "330 ohms" V 1750 3550 50  0000 C CNN
+F 2 "CH552G_dev:R_1206_3216Metric" V 1780 3500 50  0001 C CNN
+F 3 "~" H 1600 3550 50  0001 C CNN
+F 4 "1206" V 1550 3550 50  0000 C CNN "Package"
+	1    1650 3550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2000 3550 2    50   Input ~ 0
+P1.6
+Wire Wire Line
+	1800 3550 2000 3550
+Wire Wire Line
+	1250 3550 1500 3550
+Text GLabel 800  3550 0    50   Input ~ 0
+GND
+Wire Wire Line
+	950  3550 800  3550
+$Comp
+L CH552G_dev:LED_1206 D17
+U 1 1 5D785B88
+P 2750 3750
+F 0 "D17" H 2750 3950 50  0000 C CNN
+F 1 "Red" H 2750 3850 50  0000 C CNN
+F 2 "CH552G_dev:LED_1206_3216Metric" H 2750 3500 50  0001 C CNN
+F 3 "~" H 2750 3750 50  0001 C CNN
+F 4 "1206" H 2800 3650 50  0000 C CNN "Package"
+	1    2750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:R_1206 R17
+U 1 1 5D785B8F
+P 3300 3750
+F 0 "R17" V 3500 3750 50  0000 C CNN
+F 1 "330 ohms" V 3400 3750 50  0000 C CNN
+F 2 "CH552G_dev:R_1206_3216Metric" V 3430 3700 50  0001 C CNN
+F 3 "~" H 3250 3750 50  0001 C CNN
+F 4 "1206" V 3200 3750 50  0000 C CNN "Package"
+	1    3300 3750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3650 3750 2    50   Input ~ 0
+P1.7
+Wire Wire Line
+	3450 3750 3650 3750
+Wire Wire Line
+	2900 3750 3150 3750
+Text GLabel 2450 3750 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2600 3750 2450 3750
+$Comp
+L CH552G_dev:LED_1206 D31
+U 1 1 5D785BAE
+P 2750 4150
+F 0 "D31" H 2750 4350 50  0000 C CNN
+F 1 "Blue" H 2750 4250 50  0000 C CNN
+F 2 "CH552G_dev:LED_1206_3216Metric" H 2750 3900 50  0001 C CNN
+F 3 "~" H 2750 4150 50  0001 C CNN
+F 4 "1206" H 2800 4050 50  0000 C CNN "Package"
+	1    2750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:R_1206 R31
+U 1 1 5D785BB5
+P 3300 4150
+F 0 "R31" V 3500 4150 50  0000 C CNN
+F 1 "330 ohms" V 3400 4150 50  0000 C CNN
+F 2 "CH552G_dev:R_1206_3216Metric" V 3430 4100 50  0001 C CNN
+F 3 "~" H 3250 4150 50  0001 C CNN
+F 4 "1206" V 3200 4150 50  0000 C CNN "Package"
+	1    3300 4150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3650 4150 2    50   Input ~ 0
+P3.1
+Wire Wire Line
+	3450 4150 3650 4150
+Wire Wire Line
+	2900 4150 3150 4150
+Text GLabel 2450 4150 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2600 4150 2450 4150
+$Comp
+L CH552G_dev:LED_1206 D30
+U 1 1 5D785BC1
+P 1100 4350
+F 0 "D30" H 1100 4550 50  0000 C CNN
+F 1 "Blue" H 1100 4450 50  0000 C CNN
+F 2 "CH552G_dev:LED_1206_3216Metric" H 1100 4100 50  0001 C CNN
+F 3 "~" H 1100 4350 50  0001 C CNN
+F 4 "1206" H 1150 4250 50  0000 C CNN "Package"
+	1    1100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:R_1206 R30
+U 1 1 5D785BC8
+P 1650 4350
+F 0 "R30" V 1850 4350 50  0000 C CNN
+F 1 "330 ohms" V 1750 4350 50  0000 C CNN
+F 2 "CH552G_dev:R_1206_3216Metric" V 1780 4300 50  0001 C CNN
+F 3 "~" H 1600 4350 50  0001 C CNN
+F 4 "1206" V 1550 4350 50  0000 C CNN "Package"
+	1    1650 4350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2000 4350 2    50   Input ~ 0
+P3.0
+Wire Wire Line
+	1800 4350 2000 4350
+Wire Wire Line
+	1250 4350 1500 4350
+Text GLabel 800  4350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	950  4350 800  4350
+Text GLabel 9200 4150 2    50   Input ~ 0
+GND
+Text GLabel 8000 4150 0    50   Input ~ 0
+P3.3
+$Comp
+L CH552G_dev:R_1206 R33
+U 1 1 5D799BB7
+P 8300 4150
+F 0 "R33" V 8500 4150 50  0000 C CNN
+F 1 "330 ohms" V 8400 4150 50  0000 C CNN
+F 2 "CH552G_dev:R_1206_3216Metric" V 8430 4100 50  0001 C CNN
+F 3 "~" H 8250 4150 50  0001 C CNN
+F 4 "1206" V 8200 4150 50  0000 C CNN "Package"
+	1    8300 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CH552G_dev:LED_1206 D33
+U 1 1 5D79A571
+P 8850 4150
+F 0 "D33" H 8850 4350 50  0000 C CNN
+F 1 "Blue" H 8850 4250 50  0000 C CNN
+F 2 "CH552G_dev:LED_1206_3216Metric" H 8850 3900 50  0001 C CNN
+F 3 "~" H 8850 4150 50  0001 C CNN
+F 4 "1206" H 8900 4050 50  0000 C CNN "Package"
+	1    8850 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4150 8150 4150
+Wire Wire Line
+	8450 4150 8700 4150
+Wire Wire Line
+	9000 4150 9200 4150
+Text GLabel 10200 4500 2    50   Input ~ 0
+GND
+Text GLabel 9300 4500 0    50   Input ~ 0
+P1.1
+$Comp
+L CH552G_dev:TS2306A SW11
+U 1 1 5D7C698F
+P 9450 4500
+F 0 "SW11" H 9750 4313 50  0000 C CNN
+F 1 "TS2306A" V 9705 4450 50  0001 R CNN
+F 2 "CH552G_dev:TS2306A240GFMSM9_C388290" H 9750 4300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1904241742_SHOU-HAN-TS2306A-240gf-MSM-9_C388290.pdf" H 9750 4200 50  0001 C CNN
+F 4 "Tactile Switches SPST 3.00mm x 2.00mm 0.60mm 10mA @ 5VDC SMD RoHS" H 9750 4100 50  0001 C CNN "Description"
+F 5 "1" H 9750 4000 50  0001 C CNN "Height"
+F 6 "Shou Han" H 9750 3900 50  0001 C CNN "Manufacturer_Name"
+F 7 "TS2306A-240GF-MSM-9_C388290" H 9750 3800 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "TS2306A" H 9750 4404 50  0000 C CNN "Package"
+	1    9450 4500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9300 4500 9450 4500
+Text GLabel 10200 3800 2    50   Input ~ 0
+GND
+Text GLabel 9300 3800 0    50   Input ~ 0
+P3.4
+$Comp
+L CH552G_dev:TS2306A SW34
+U 1 1 5D7E8D5A
+P 9450 3800
+F 0 "SW34" H 9750 3613 50  0000 C CNN
+F 1 "TS2306A" V 9705 3750 50  0001 R CNN
+F 2 "CH552G_dev:TS2306A240GFMSM9_C388290" H 9750 3600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1904241742_SHOU-HAN-TS2306A-240gf-MSM-9_C388290.pdf" H 9750 3500 50  0001 C CNN
+F 4 "Tactile Switches SPST 3.00mm x 2.00mm 0.60mm 10mA @ 5VDC SMD RoHS" H 9750 3400 50  0001 C CNN "Description"
+F 5 "1" H 9750 3300 50  0001 C CNN "Height"
+F 6 "Shou Han" H 9750 3200 50  0001 C CNN "Manufacturer_Name"
+F 7 "TS2306A-240GF-MSM-9_C388290" H 9750 3100 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "TS2306A" H 9750 3704 50  0000 C CNN "Package"
+	1    9450 3800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10050 3800 10200 3800
+NoConn ~ 6600 1850
+$Comp
+L CH552G_dev:Conn_01x02 J4
+U 1 1 5D737E40
+P 5800 5650
+F 0 "J4" H 5718 5325 50  0000 C CNN
+F 1 "Battery" H 5718 5416 50  0000 C CNN
+F 2 "CH552G_dev:Pin_Header_Straight_1x02_Pitch2.54mm" H 5950 5350 50  0001 C CNN
+F 3 "~" H 5800 5650 50  0001 C CNN
+	1    5800 5650
+	1    0    0    1   
+$EndComp
+$Comp
+L CH552G_dev:Conn_01x08 J2
+U 1 1 5D751725
+P 4600 5250
+F 0 "J2" H 4550 5800 50  0000 L CNN
+F 1 "Test  1-8" H 4400 5700 50  0000 L CNN
+F 2 "CH552G_dev:Pin_Header_Straight_1x08_Pitch2.54mm" H 4700 4700 50  0001 C CNN
+F 3 "~" H 4600 5250 50  0001 C CNN
+	1    4600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH552G_dev:Conn_01x08 J3
+U 1 1 5D752CDA
+P 7000 5350
+F 0 "J3" H 7000 4700 50  0000 C CNN
+F 1 "Test 9-16" H 7000 4800 50  0000 C CNN
+F 2 "CH552G_dev:Pin_Header_Straight_1x08_Pitch2.54mm" H 7100 4800 50  0001 C CNN
+F 3 "~" H 7000 5350 50  0001 C CNN
+	1    7000 5350
+	-1   0    0    1   
+$EndComp
+Text GLabel 7300 5650 2    50   Input ~ 0
+P1.1
+Text GLabel 7300 5550 2    50   Input ~ 0
+P3.3
+Text GLabel 7300 5450 2    50   Input ~ 0
+P3.4
+Text GLabel 7300 5350 2    50   Input ~ 0
+D+
+Text GLabel 7300 5250 2    50   Input ~ 0
+D-
+Text GLabel 7300 5150 2    50   Input ~ 0
+GND
+Text GLabel 7300 5050 2    50   Input ~ 0
+VCC
+Text GLabel 7300 4950 2    50   Input ~ 0
+3V3
+Text GLabel 5500 5650 0    50   Input ~ 0
+GND
+Text GLabel 5500 5550 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	7200 5650 7300 5650
+Wire Wire Line
+	7200 5550 7300 5550
+Wire Wire Line
+	7200 5450 7300 5450
+Wire Wire Line
+	7200 5350 7300 5350
+Wire Wire Line
+	7200 5250 7300 5250
+Wire Wire Line
+	7200 5150 7300 5150
+Wire Wire Line
+	7200 5050 7300 5050
+Wire Wire Line
+	7200 4950 7300 4950
+Wire Wire Line
+	5500 5550 5600 5550
+Wire Wire Line
+	5500 5650 5600 5650
+Text GLabel 4300 5650 0    50   Input ~ 0
+P3.0
+Text GLabel 4300 5550 0    50   Input ~ 0
+P3.1
+Text GLabel 4300 5450 0    50   Input ~ 0
+RST
+Text GLabel 4300 5350 0    50   Input ~ 0
+P1.7
+Text GLabel 4300 5250 0    50   Input ~ 0
+P1.6
+Text GLabel 4300 5150 0    50   Input ~ 0
+P1.5
+Text GLabel 4300 5050 0    50   Input ~ 0
+P1.4
+Text GLabel 4300 4950 0    50   Input ~ 0
+P3.2
+Wire Wire Line
+	4400 5650 4300 5650
+Wire Wire Line
+	4400 5550 4300 5550
+Wire Wire Line
+	4400 5450 4300 5450
+Wire Wire Line
+	4400 5350 4300 5350
+Wire Wire Line
+	4400 5250 4300 5250
+Wire Wire Line
+	4400 5150 4300 5150
+Wire Wire Line
+	4400 5050 4300 5050
+Wire Wire Line
+	4400 4950 4300 4950
+Wire Wire Line
+	10050 4500 10200 4500
+Wire Wire Line
+	9300 3800 9450 3800
 $EndSCHEMATC

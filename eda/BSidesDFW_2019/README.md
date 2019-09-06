@@ -22,3 +22,4 @@ This is the file structure of this repository
     * [./gerber/](/eda/BSidesDFW_2019/gerber/) - This directory contains gerber formatted files for manufacturing
     * [./lib_fp/](/eda/BSidesDFW_2019/lib_fp/) - This directory contains footprint module directories
     * [./lib_sh/](/eda/BSidesDFW_2019/lib_sh/) - This directory contains schematic library files
+    * [./pdf/](/eda/BSidesDFW_2019/pdf/) - This directory contains pdf prints of schematics and cad files

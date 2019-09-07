@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name CH552G_dev)(type KiCad)(uri ${KIPRJMOD}/lib_fp/CH552G_dev.pretty)(options "")(descr "CH552G dev board footprints"))
+  (lib (name alt_bier)(type KiCad)(uri ${KIPRJMOD}/lib_fp/alt_bier.pretty)(options "")(descr Logo))
 )

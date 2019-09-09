@@ -17,9 +17,15 @@ This is the file structure of this repository
     * ./lib_fp/ - This directory contains footprint module directories
     * ./lib_sh/ - This directory contains schematic library files
     * ./pdf/ - This directory contains pdf prints of schematics and cad files
-  * [/eda/CH552G_dev/](/eda/CH552G_dev/) - KiCad 5.x project folder for the BSidesDFW 2019 badge
+  * [/eda/CH552G_dev/](/eda/CH552G_dev/) - KiCad 5.x project folder for the CH552G development board
     * ./3d_models/ - This directory contains footprint 3d model files
     * ./gerber/ - This directory contains gerber formatted files for manufacturing
     * ./lib_fp/ - This directory contains footprint module directories
     * ./lib_sh/ - This directory contains schematic library files
     * ./pdf/ - This directory contains pdf prints of schematics and cad files
+    * [/eda/HHV_2019_SC/](/eda/HHV_2019_SC/) - KiCad 5.x project folder for the HHV Soldering Challenge board
+      * ./3d_models/ - This directory contains footprint 3d model files
+      * ./gerber/ - This directory contains gerber formatted files for manufacturing
+      * ./lib_fp/ - This directory contains footprint module directories
+      * ./lib_sh/ - This directory contains schematic library files
+      * ./pdf/ - This directory contains pdf prints of schematics and cad files

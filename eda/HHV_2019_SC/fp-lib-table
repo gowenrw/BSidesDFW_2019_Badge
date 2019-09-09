@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name HHV_2019_SC)(type KiCad)(uri ${KIPRJMOD}/lib_fp/HHV_2019_SC.pretty)(options "")(descr ""))
+  (lib (name alt_bier)(type KiCad)(uri ${KIPRJMOD}/lib_fp/alt_bier.pretty)(options "")(descr ""))
+)

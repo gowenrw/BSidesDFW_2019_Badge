@@ -1,6 +1,6 @@
-# BSidesDFW_2019_Badge / Electronic Design Automation / Prototypes / CH552 Prototype
+# BSidesDFW_2019_Badge / Electronic Design Automation / CH552G Prototype
 
-This is where all the KiCad 5.x files related to the CH552 prototype PCB
+This is where all the KiCad 5.x files related to the CH552G prototype PCB
 
 Note that this prototype is specific to the CH552G chip which is SOP-16 and will not work on the CH552T chip which is TSSOP-20.
 

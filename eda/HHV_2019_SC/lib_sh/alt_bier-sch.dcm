@@ -30,9 +30,45 @@ K LED diode
 F ~
 $ENDCMP
 #
+$CMP LED_3mm
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
+$CMP LED_5mm
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
+$CMP LED_8mm
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
+$CMP LED_NeoPixel_THT_5mm
+D RGB LED with integrated controller, 5mm LED package
+K RGB LED NeoPixel addressable
+F https://www.adafruit.com/product/1938
+$ENDCMP
+#
+$CMP LED_NeoPixel_THT_8mm
+D RGB LED with integrated controller, 8mm LED package
+K RGB LED NeoPixel addressable
+F https://www.adafruit.com/product/1734
+$ENDCMP
+#
 $CMP R_1206
 D Resistor SMD 1206
 K R res resistor 1206
+F ~
+$ENDCMP
+#
+$CMP R_THT
+D ResistorThrough Hole
+K R res resistor
 F ~
 $ENDCMP
 #

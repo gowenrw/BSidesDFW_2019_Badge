@@ -60,6 +60,12 @@ K RGB LED NeoPixel addressable
 F https://www.adafruit.com/product/1734
 $ENDCMP
 #
+$CMP LED_RCBG_THT_5mm
+D RGB LED, red/cathode/blue/green
+K LED RGB diode
+F ~
+$ENDCMP
+#
 $CMP R_1206
 D Resistor SMD 1206
 K R res resistor 1206
@@ -70,6 +76,12 @@ $CMP R_THT
 D ResistorThrough Hole
 K R res resistor
 F ~
+$ENDCMP
+#
+$CMP SW_Push_Dual_THT_6mm
+D Push button switch, generic, symbol, four pins
+K switch normally-open pushbutton push-button
+F https://datasheet.lcsc.com/szlcsc/1905211531_SHOU-HAN-TS665CJ_C393938.pdf
 $ENDCMP
 #
 $CMP TS2306A

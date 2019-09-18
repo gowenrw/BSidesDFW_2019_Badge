@@ -9,6 +9,12 @@ This is the file structure of this repository
 * [/](/README.md) - Home
 * [/code/](/code/) - YOU ARE HERE
 * [/code/ugly_dev_board/](/code/ugly_dev_board/) - Code for the Ugly Dev Board CH552G
+* [/code/CH552T_dev_board/](/code/CH552T_dev_board/) - Code for the CH552T dev board designed by wrickert
+  * Reference to his CH552T dev board here: https://github.com/wrickert/CH552
+* [/code/CH552G_dev_board/](/code/CH552G_dev_board/) - Code for the CH552G dev board designed by @alt_bier
+  * Reference to that CH552G dev board here: [/eda/CH552G_dev/](/eda/CH552G_dev/)
+
+
 
 ## General Notes
 

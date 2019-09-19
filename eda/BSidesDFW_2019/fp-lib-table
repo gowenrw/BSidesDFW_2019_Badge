@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name BSidesDFW_2019)(type KiCad)(uri ${KIPRJMOD}/lib_fp/BSidesDFW_2019.pretty)(options "")(descr "BSides DFW 2019 Badge footprints"))
+  (lib (name alt_bier)(type KiCad)(uri ${KIPRJMOD}/lib_fp/alt_bier.pretty)(options "")(descr Logo))
+)

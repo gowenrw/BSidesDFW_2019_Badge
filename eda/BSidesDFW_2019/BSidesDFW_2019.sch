@@ -23,7 +23,7 @@ F 1 "CH552G" H 5800 3984 50  0000 C CNB
 F 2 "BSidesDFW_2019:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5000 2350 50  0001 L CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1812131556_Jiangsu-Qin-Heng-CH552G_C111292.pdf" H 5450 4200 50  0001 C CNN
 	1    5800 3400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L BSidesDFW_2019:USB_B_Micro J1
@@ -35,7 +35,7 @@ F 2 "BSidesDFW_2019:USB_Micro-B_Jing" V 6000 1600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Jing-Extension-of-the-Electronic-Co-LCSC-micro-5PAll-posts-are-not-guided-Flat-welding-High-temperature_C77238.pdf" H 6450 1600 50  0001 C CNN
 F 4 "USB_B_Micro" H 6357 2026 50  0000 C CNN "Package"
 	1    6300 1650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L BSidesDFW_2019:C_1206 C1
@@ -47,7 +47,7 @@ F 2 "BSidesDFW_2019:C_1206_3216Metric" V 8938 3150 50  0001 C CNN
 F 3 "~" H 8750 3200 50  0001 C CNN
 F 4 "1206" H 8635 3291 50  0000 R CNN "Package"
 	1    8750 3200
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L BSidesDFW_2019:LED_1206 D32
@@ -59,7 +59,7 @@ F 2 "BSidesDFW_2019:LED_1206_3216Metric" H 2750 2700 50  0001 C CNN
 F 3 "~" H 2750 2950 50  0001 C CNN
 F 4 "1206" H 2800 2850 50  0000 C CNN "Package"
 	1    2750 2950
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 7300 3550 2    50   Input ~ 0
 D-
@@ -86,8 +86,6 @@ Wire Wire Line
 Connection ~ 6300 2150
 Text GLabel 7850 3150 2    50   Input ~ 0
 VCC
-Text GLabel 6900 1450 2    50   Input ~ 0
-VCC
 Text GLabel 7850 2950 2    50   Input ~ 0
 3V3
 Wire Wire Line
@@ -104,7 +102,7 @@ F 2 "BSidesDFW_2019:C_1206_3216Metric" V 9738 3150 50  0001 C CNN
 F 3 "~" H 9550 3200 50  0001 C CNN
 F 4 "1206" H 9435 3291 50  0000 R CNN "Package"
 	1    9550 3200
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7700 3350 7700 3500
@@ -172,7 +170,7 @@ F 6 "Shou Han" H 8000 2000 50  0001 C CNN "Manufacturer_Name"
 F 7 "TS2306A-240GF-MSM-9_C388290" H 8000 1900 50  0001 C CNN "Manufacturer_Part_Number"
 F 8 "TS2306A" V 7955 2550 50  0000 R CNN "Package"
 	1    7700 2600
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Text GLabel 7300 3950 2    50   Input ~ 0
 P3.4
@@ -228,7 +226,7 @@ F 2 "BSidesDFW_2019:R_1206_3216Metric" V 7830 1650 50  0001 C CNN
 F 3 "~" H 7650 1700 50  0001 C CNN
 F 4 "1206" H 7770 1609 50  0000 L CNN "Package"
 	1    7700 1700
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L BSidesDFW_2019:R_1206 R32
@@ -240,7 +238,7 @@ F 2 "BSidesDFW_2019:R_1206_3216Metric" V 3430 2900 50  0001 C CNN
 F 3 "~" H 3250 2950 50  0001 C CNN
 F 4 "1206" V 3200 2950 50  0000 C CNN "Package"
 	1    3300 2950
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Text GLabel 3650 2950 2    50   Input ~ 0
 P3.2
@@ -262,7 +260,7 @@ F 2 "BSidesDFW_2019:LED_1206_3216Metric" H 1100 2900 50  0001 C CNN
 F 3 "~" H 1100 3150 50  0001 C CNN
 F 4 "1206" H 1150 3050 50  0000 C CNN "Package"
 	1    1100 3150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L BSidesDFW_2019:R_1206 R14
@@ -274,7 +272,7 @@ F 2 "BSidesDFW_2019:R_1206_3216Metric" V 1780 3100 50  0001 C CNN
 F 3 "~" H 1600 3150 50  0001 C CNN
 F 4 "1206" V 1550 3150 50  0000 C CNN "Package"
 	1    1650 3150
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Text GLabel 2000 3150 2    50   Input ~ 0
 P1.4
@@ -296,7 +294,7 @@ F 2 "BSidesDFW_2019:LED_1206_3216Metric" H 2750 3100 50  0001 C CNN
 F 3 "~" H 2750 3350 50  0001 C CNN
 F 4 "1206" H 2800 3250 50  0000 C CNN "Package"
 	1    2750 3350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L BSidesDFW_2019:R_1206 R15
@@ -308,7 +306,7 @@ F 2 "BSidesDFW_2019:R_1206_3216Metric" V 3430 3300 50  0001 C CNN
 F 3 "~" H 3250 3350 50  0001 C CNN
 F 4 "1206" V 3200 3350 50  0000 C CNN "Package"
 	1    3300 3350
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Text GLabel 3650 3350 2    50   Input ~ 0
 P1.5
@@ -330,7 +328,7 @@ F 2 "BSidesDFW_2019:LED_1206_3216Metric" H 1100 3300 50  0001 C CNN
 F 3 "~" H 1100 3550 50  0001 C CNN
 F 4 "1206" H 1150 3450 50  0000 C CNN "Package"
 	1    1100 3550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L BSidesDFW_2019:R_1206 R16
@@ -342,7 +340,7 @@ F 2 "BSidesDFW_2019:R_1206_3216Metric" V 1780 3500 50  0001 C CNN
 F 3 "~" H 1600 3550 50  0001 C CNN
 F 4 "1206" V 1550 3550 50  0000 C CNN "Package"
 	1    1650 3550
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Text GLabel 2000 3550 2    50   Input ~ 0
 P1.6
@@ -364,7 +362,7 @@ F 2 "BSidesDFW_2019:LED_1206_3216Metric" H 2750 3500 50  0001 C CNN
 F 3 "~" H 2750 3750 50  0001 C CNN
 F 4 "1206" H 2800 3650 50  0000 C CNN "Package"
 	1    2750 3750
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L BSidesDFW_2019:R_1206 R17
@@ -376,7 +374,7 @@ F 2 "BSidesDFW_2019:R_1206_3216Metric" V 3430 3700 50  0001 C CNN
 F 3 "~" H 3250 3750 50  0001 C CNN
 F 4 "1206" V 3200 3750 50  0000 C CNN "Package"
 	1    3300 3750
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Text GLabel 3650 3750 2    50   Input ~ 0
 P1.7
@@ -398,7 +396,7 @@ F 2 "BSidesDFW_2019:LED_1206_3216Metric" H 2750 3900 50  0001 C CNN
 F 3 "~" H 2750 4150 50  0001 C CNN
 F 4 "1206" H 2800 4050 50  0000 C CNN "Package"
 	1    2750 4150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L BSidesDFW_2019:R_1206 R31
@@ -410,7 +408,7 @@ F 2 "BSidesDFW_2019:R_1206_3216Metric" V 3430 4100 50  0001 C CNN
 F 3 "~" H 3250 4150 50  0001 C CNN
 F 4 "1206" V 3200 4150 50  0000 C CNN "Package"
 	1    3300 4150
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Text GLabel 3650 4150 2    50   Input ~ 0
 P3.1
@@ -432,7 +430,7 @@ F 2 "BSidesDFW_2019:LED_1206_3216Metric" H 1100 4100 50  0001 C CNN
 F 3 "~" H 1100 4350 50  0001 C CNN
 F 4 "1206" H 1150 4250 50  0000 C CNN "Package"
 	1    1100 4350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L BSidesDFW_2019:R_1206 R30
@@ -444,7 +442,7 @@ F 2 "BSidesDFW_2019:R_1206_3216Metric" V 1780 4300 50  0001 C CNN
 F 3 "~" H 1600 4350 50  0001 C CNN
 F 4 "1206" V 1550 4350 50  0000 C CNN "Package"
 	1    1650 4350
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Text GLabel 2000 4350 2    50   Input ~ 0
 P3.0
@@ -470,7 +468,7 @@ F 2 "BSidesDFW_2019:R_1206_3216Metric" V 8430 4100 50  0001 C CNN
 F 3 "~" H 8250 4150 50  0001 C CNN
 F 4 "1206" V 8200 4150 50  0000 C CNN "Package"
 	1    8300 4150
-	0    -1   -1   0
+	0    1    1    0   
 $EndComp
 $Comp
 L BSidesDFW_2019:LED_1206 D33
@@ -482,7 +480,7 @@ F 2 "BSidesDFW_2019:LED_1206_3216Metric" H 8850 3900 50  0001 C CNN
 F 3 "~" H 8850 4150 50  0001 C CNN
 F 4 "1206" H 8900 4050 50  0000 C CNN "Package"
 	1    8850 4150
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8000 4150 8150 4150
@@ -508,140 +506,62 @@ F 6 "Shou Han" H 9750 3900 50  0001 C CNN "Manufacturer_Name"
 F 7 "TS2306A-240GF-MSM-9_C388290" H 9750 3800 50  0001 C CNN "Manufacturer_Part_Number"
 F 8 "TS2306A" H 9750 4404 50  0000 C CNN "Package"
 	1    9450 4500
-	1    0    0    1
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9300 4500 9450 4500
-Text GLabel 10200 3800 2    50   Input ~ 0
-GND
-Text GLabel 9300 3800 0    50   Input ~ 0
-P3.4
-$Comp
-L BSidesDFW_2019:TS2306A SW34
-U 1 1 5D7E8D5A
-P 9450 3800
-F 0 "SW34" H 9750 3613 50  0000 C CNN
-F 1 "TS2306A" V 9705 3750 50  0001 R CNN
-F 2 "BSidesDFW_2019:TS2306A240GFMSM9_C388290" H 9750 3600 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1904241742_SHOU-HAN-TS2306A-240gf-MSM-9_C388290.pdf" H 9750 3500 50  0001 C CNN
-F 4 "Tactile Switches SPST 3.00mm x 2.00mm 0.60mm 10mA @ 5VDC SMD RoHS" H 9750 3400 50  0001 C CNN "Description"
-F 5 "1" H 9750 3300 50  0001 C CNN "Height"
-F 6 "Shou Han" H 9750 3200 50  0001 C CNN "Manufacturer_Name"
-F 7 "TS2306A-240GF-MSM-9_C388290" H 9750 3100 50  0001 C CNN "Manufacturer_Part_Number"
-F 8 "TS2306A" H 9750 3704 50  0000 C CNN "Package"
-	1    9450 3800
-	1    0    0    1
-$EndComp
-Wire Wire Line
-	10050 3800 10200 3800
 NoConn ~ 6600 1850
 $Comp
-L BSidesDFW_2019:Conn_01x02 J4
+L BSidesDFW_2019:Conn_01x02 J2
 U 1 1 5D737E40
 P 5800 5650
-F 0 "J4" H 5718 5325 50  0000 C CNN
+F 0 "J2" H 5718 5325 50  0000 C CNN
 F 1 "Battery" H 5718 5416 50  0000 C CNN
 F 2 "BSidesDFW_2019:Pin_Header_Straight_1x02_Pitch2.54mm" H 5950 5350 50  0001 C CNN
 F 3 "~" H 5800 5650 50  0001 C CNN
 	1    5800 5650
-	1    0    0    1
+	1    0    0    1   
 $EndComp
-$Comp
-L BSidesDFW_2019:Conn_01x08 J2
-U 1 1 5D751725
-P 4600 5250
-F 0 "J2" H 4550 5800 50  0000 L CNN
-F 1 "Test  1-8" H 4400 5700 50  0000 L CNN
-F 2 "BSidesDFW_2019:Pin_Header_Straight_1x08_Pitch2.54mm" H 4700 4700 50  0001 C CNN
-F 3 "~" H 4600 5250 50  0001 C CNN
-	1    4600 5250
-	1    0    0    -1
-$EndComp
-$Comp
-L BSidesDFW_2019:Conn_01x08 J3
-U 1 1 5D752CDA
-P 7000 5350
-F 0 "J3" H 7000 4700 50  0000 C CNN
-F 1 "Test 9-16" H 7000 4800 50  0000 C CNN
-F 2 "BSidesDFW_2019:Pin_Header_Straight_1x08_Pitch2.54mm" H 7100 4800 50  0001 C CNN
-F 3 "~" H 7000 5350 50  0001 C CNN
-	1    7000 5350
-	-1   0    0    1
-$EndComp
-Text GLabel 7300 5650 2    50   Input ~ 0
-P1.1
-Text GLabel 7300 5550 2    50   Input ~ 0
-P3.3
-Text GLabel 7300 5450 2    50   Input ~ 0
-P3.4
-Text GLabel 7300 5350 2    50   Input ~ 0
-D+
-Text GLabel 7300 5250 2    50   Input ~ 0
-D-
-Text GLabel 7300 5150 2    50   Input ~ 0
-GND
-Text GLabel 7300 5050 2    50   Input ~ 0
-VCC
-Text GLabel 7300 4950 2    50   Input ~ 0
-3V3
 Text GLabel 5500 5650 0    50   Input ~ 0
 GND
-Text GLabel 5500 5550 0    50   Input ~ 0
+Text GLabel 7150 5550 0    50   Input ~ 0
 VCC
-Wire Wire Line
-	7200 5650 7300 5650
-Wire Wire Line
-	7200 5550 7300 5550
-Wire Wire Line
-	7200 5450 7300 5450
-Wire Wire Line
-	7200 5350 7300 5350
-Wire Wire Line
-	7200 5250 7300 5250
-Wire Wire Line
-	7200 5150 7300 5150
-Wire Wire Line
-	7200 5050 7300 5050
-Wire Wire Line
-	7200 4950 7300 4950
 Wire Wire Line
 	5500 5550 5600 5550
 Wire Wire Line
 	5500 5650 5600 5650
-Text GLabel 4300 5650 0    50   Input ~ 0
-P3.0
-Text GLabel 4300 5550 0    50   Input ~ 0
-P3.1
-Text GLabel 4300 5450 0    50   Input ~ 0
-RST
-Text GLabel 4300 5350 0    50   Input ~ 0
-P1.7
-Text GLabel 4300 5250 0    50   Input ~ 0
-P1.6
-Text GLabel 4300 5150 0    50   Input ~ 0
-P1.5
-Text GLabel 4300 5050 0    50   Input ~ 0
-P1.4
-Text GLabel 4300 4950 0    50   Input ~ 0
-P3.2
-Wire Wire Line
-	4400 5650 4300 5650
-Wire Wire Line
-	4400 5550 4300 5550
-Wire Wire Line
-	4400 5450 4300 5450
-Wire Wire Line
-	4400 5350 4300 5350
-Wire Wire Line
-	4400 5250 4300 5250
-Wire Wire Line
-	4400 5150 4300 5150
-Wire Wire Line
-	4400 5050 4300 5050
-Wire Wire Line
-	4400 4950 4300 4950
 Wire Wire Line
 	10050 4500 10200 4500
+$Comp
+L BSidesDFW_2019:SW_SPDT_C136659 SW2
+U 1 1 5D8E2E39
+P 7450 5550
+F 0 "SW2" H 7450 5835 50  0000 C CNN
+F 1 "SW_SPDT_C136659" H 7450 5744 50  0001 C CNN
+F 2 "BSidesDFW_2019:SW_SPDT_PCM12_C136659" H 7450 5250 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Korean-Hroparts-Elec-K3-1296S-E2_C136659.pdf" H 7450 5550 50  0001 C CNN
+F 4 "SW_SPDT_C136659" H 7450 5744 50  0000 C CNN "Package"
+	1    7450 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 5650 2    50   Input ~ 0
+BAT-PWR
+Text GLabel 7750 5450 2    50   Input ~ 0
+USB-PWR
 Wire Wire Line
-	9300 3800 9450 3800
+	7650 5450 7750 5450
+Wire Wire Line
+	7650 5650 7750 5650
+Wire Wire Line
+	7250 5550 7150 5550
+Text GLabel 5500 5550 0    50   Input ~ 0
+BAT-PWR
+Text GLabel 6900 1450 2    50   Input ~ 0
+USB-PWR
+Text Notes 6850 6200 0    50   ~ 0
+SW2 controls the power source for VCC on the IC\nEither USB or Battery activated via micro toggle\nThis prevents overvoltage from both active
+Text Notes 8200 2400 0    50   ~ 0
+SW1 activates a pull up resistor for D+ on the IC\nvia tactile switch held down while USB is connected.\nThis places the IC into programming mode.
+Text Notes 9050 5000 0    50   ~ 0
+SW11 will be used by code on IC\nThis allows for different subroutines\nto be activated via tactile switch
 $EndSCHEMATC

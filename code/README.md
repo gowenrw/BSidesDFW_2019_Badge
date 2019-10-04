@@ -8,19 +8,19 @@ This is the file structure of this repository
 
 * [/](/README.md) - Home
 * [/code/](/code/) - YOU ARE HERE
-* [/code/ugly_dev_board/](/code/ugly_dev_board/) - Code for the Ugly Dev Board CH552G
-* [/code/CH552T_dev_board/](/code/CH552T_dev_board/) - Code for the CH552T dev board designed by wrickert
-  * Reference to his CH552T dev board here: https://github.com/wrickert/CH552
-* [/code/CH552G_dev_board/](/code/CH552G_dev_board/) - Code for the CH552G dev board designed by @alt_bier
-  * Reference to that CH552G dev board here: [/eda/CH552G_dev/](/eda/CH552G_dev/)
-
-
+  * [/code/BSidesDFW_badge/](/code/BSidesDFW_badge/) - Code for the BSidesDFW_2019_Badge designed by [@alt_bier](https://twitter.com/alt_bier) and [MadHat](https://twitter.com/unspecific)
+    * Reference to the BSidesDFW_2019_Badge PCB here: [/eda/BSidesDFW_2019/](/eda/BSidesDFW_2019/)
+  * [/code/ugly_dev_board/](/code/ugly_dev_board/) - Code for the Ugly Dev Board using the CH552G chip hacked together by [@alt_bier](https://twitter.com/alt_bier)
+  * [/code/CH552T_dev_board/](/code/CH552T_dev_board/) - Code for the CH552T dev board designed by [Wrickert](https://twitter.com/wrickert7)
+    * Reference to his CH552T dev board here: https://github.com/wrickert/CH552
+  * [/code/CH552G_dev_board/](/code/CH552G_dev_board/) - Code for the CH552G dev board designed by [@alt_bier](https://twitter.com/alt_bier)
+    * Reference to the CH552G dev board here: [/eda/CH552G_dev/](/eda/CH552G_dev/)
+  * [/code/include/](/code/include/) - Includes for the 55X chipset used in all the above
 
 ## General Notes
 
-For now the type of code needed will be up in the air until we choose a microcontroller.
-
-The CH552G is first up for consideration and uses a stripped down C code with SDCC to implement.
+The CH552G is the microcontroller that has been chosen for the badge.
+It uses a stripped down C code with SDCC to implement.
 
 Here is a link to some good documentation on OpenSource SDCC and the CH55x SDK https://github.com/Blinkinlabs/ch554_sdcc
 

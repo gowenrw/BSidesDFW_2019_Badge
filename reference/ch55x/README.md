@@ -31,6 +31,19 @@ Basics on the CH551:
 
 Programming is either with Keil C51 or with SDCC (links below)
 
+## Reference Files
+
+* Jiangsu Qin Heng CH552G
+  * Tested and CHOSEN for the badge as it's form factor and pin count works for the badge
+  * [LCSC.COM Reference](./1812131556_Jiangsu-Qin-Heng-CH552G_C111292_lcsc.com.pdf)
+  * [Datasheet CN](./1812131556_Jiangsu-Qin-Heng-CH552G_C111292_datasheet.pdf)
+  * [Datasheet EN](./1812131556_Jiangsu-Qin-Heng-CH552G_C111292_datasheet_zh-CN-en-Translated.pdf)
+* Jiangsu Qin Heng CH552T
+  * Tested and NOT chosen as it's smaller form factor was not a good fit
+  * [LCSC.COM Reference](./Jiangsu-Qin-Heng-CH552T_C111367_lcsc.com.pdf)
+  * [Datasheet CN](./Jiangsu-Qin-Heng-CH552T_C111367_datasheet.pdf)
+  * [Datasheet EN](./Jiangsu-Qin-Heng-CH552T_C111367.zh-CN.en.pdf)
+
 ## External References
 
 * [Hackaday article on CH552](https://hackaday.com/tag/ch552/)
@@ -41,5 +54,3 @@ Programming is either with Keil C51 or with SDCC (links below)
 * [Small Device C Compiler SDCC](https://sourceforge.net/projects/sdcc/files/latest/download?source=files)
 * [WCHISPTool Firmware Uploader](http://wch.cn/download/WCHISPTool_Setup_exe.html)
 * [lcsc.com WCH products](https://lcsc.com/products/WCH_11013.html)
-
-Various data sheets and other documentation uploaded to the folder.

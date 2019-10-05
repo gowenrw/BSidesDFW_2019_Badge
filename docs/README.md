@@ -1,10 +1,3 @@
-# BSidesDFW_2019_Badge / Docs
+# BSidesDFW 2019 Badge 
 
-Documentation created by this project related to the badge
-
-## File Structure
-
-This is the file structure of this repository
-
-* [/](/README.md) - Home
-* [/docs/](/docs/) - YOU ARE HERE
+Preparing this space for the repository web page.

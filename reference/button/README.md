@@ -21,3 +21,7 @@ This is the file structure of this repository
   * Tested and NOT chosen as it's larger form factor was not a good fit
   * [LCSC.COM Reference](./1904261730_BRIGHT-TSA363G25-250B_C354943_lcsc.com.pdf)
   * [Datasheet](./1904261730_BRIGHT-TSA363G25-250B_C354943_datasheet.pdf)
+* Shou Han THT Tactile Switch
+  * Tested and NOT chosen as it's larger form factor was not a good fit
+  * [LCSC.COM Reference](./1905211531_SHOU-HAN-TS665CJ_C393938_lcsc.com.pdf)
+  * [Datasheet](./1905211531_SHOU-HAN-TS665CJ_C393938_datasheet.pdf)

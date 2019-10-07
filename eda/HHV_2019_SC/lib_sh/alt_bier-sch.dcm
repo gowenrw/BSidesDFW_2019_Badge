@@ -84,6 +84,12 @@ K switch normally-open pushbutton push-button
 F https://datasheet.lcsc.com/szlcsc/1905211531_SHOU-HAN-TS665CJ_C393938.pdf
 $ENDCMP
 #
+$CMP SW_SPDT_C136659
+D Switch, single pole double throw
+K switch single-pole double-throw spdt ON-ON
+F https://datasheet.lcsc.com/szlcsc/Korean-Hroparts-Elec-K3-1296S-E2_C136659.pdf
+$ENDCMP
+#
 $CMP TS2306A
 D Tactile Switches SPST 3.00mm x 2.00mm 0.60mm 10mA @ 5VDC SMD RoHS
 F https://datasheet.lcsc.com/szlcsc/1904241742_SHOU-HAN-TS2306A-240gf-MSM-9_C388290.pdf

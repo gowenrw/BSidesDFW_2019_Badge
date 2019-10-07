@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name alt_bier-sch)(type Legacy)(uri ${KIPRJMOD}/lib_sh/alt_bier-sch.lib)(options "")(descr ""))
+  (lib (name HHV_2019_SC-rescue)(type Legacy)(uri ${KIPRJMOD}/HHV_2019_SC-rescue.lib)(options "")(descr ""))
 )

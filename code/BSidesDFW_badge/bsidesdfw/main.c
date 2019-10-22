@@ -16,9 +16,6 @@
 
 #define BUTTON11_PIN 1
 
-#define DELAYMAX 300
-#define DELAYMIN 50
-
 // P1 = 0x90 P3 = 0xB0
 SBIT(LED30, 0xB0, LED30_PIN);
 SBIT(LED31, 0xB0, LED31_PIN);
@@ -31,10 +28,12 @@ SBIT(LED17, 0x90, LED17_PIN);
 
 SBIT(BUTTON11, 0x90, BUTTON11_PIN);
 
-// 2 byte integer for delay value
-uint16_t delayvalue=DELAYMIN;
 // 1 byte integer for putton push flag - no bool type available
 uint8_t button11push=0;
+// 1 byte integer for LED Mode (controlled by button)
+// Modes 1 thru 4 are chase at different speeds, Mode 5 is cryto challenge
+uint8_t ledmode=1;
+
 
 void main() {
     CfgFsys();
@@ -65,71 +64,104 @@ void main() {
     P1_MOD_OC = P1_MOD_OC & ~(1<<LED17_PIN);
     P1_DIR_PU = P1_DIR_PU |	(1<<LED17_PIN);
 
-    // Setting the LEDs to opposite state to turn them on or off
-    // Turn off all but the first two to start chase
-    // LED30 ON
-    LED31 = !LED31;  // OFF
-    LED32 = !LED32;  // OFF
-    LED33 = !LED33;  // OFF
-    // LED14 ON
-    LED15 = !LED15;  // OFF
-    LED16 = !LED16;  // OFF
-    LED17 = !LED17;  // OFF
+    // All LEDs start with a value of 1 which is ON
+    // Turn ALL OFF to start
+    LED30 = 0;  // OFF
+    LED31 = 0;  // OFF
+    LED32 = 0;  // OFF
+    LED33 = 0;  // OFF
+    LED14 = 0;  // OFF
+    LED15 = 0;  // OFF
+    LED16 = 0;  // OFF
+    LED17 = 0;  // OFF
 
     while (1) {
-      // Delay controls speed
-    	mDelaymS(delayvalue);
-      // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
-      // If we see button push set button push flag
-      if (BUTTON11 == 0) { button11push = 1; }
-      // Setting the LEDs to opposite state to turn them on or off
-      // Turn off previous two, turn on next two
-      LED30 = !LED30;  // OFF
-      LED31 = !LED31;  // ON
-      LED14 = !LED14;  // OFF
-      LED15 = !LED15;  // ON
-      // Delay controls speed
-      mDelaymS(delayvalue);
-      // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
-      // If we see button push set button push flag
-      if (BUTTON11 == 0) { button11push = 1; }
-      // Setting the LEDs to opposite state to turn them on or off
-      // Turn off previous two, turn on next two
-      LED31 = !LED31;  // OFF
-      LED32 = !LED32;  // ON
-      LED15 = !LED15;  // OFF
-      LED16 = !LED16;  // ON
-      // Delay controls speed
-      mDelaymS(delayvalue);
-      // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
-      // If we see button push set button push flag
-      if (BUTTON11 == 0) { button11push = 1; }
-      // Setting the LEDs to opposite state to turn them on or off
-      // Turn off previous two, turn on next two
-      LED32 = !LED32;  // OFF
-      LED33 = !LED33;  // ON
-      LED16 = !LED16;  // OFF
-      LED17 = !LED17;  // ON
-      // Delay controls speed
-      mDelaymS(delayvalue);
-      // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
-      // If we see button push set button push flag
-      if (BUTTON11 == 0) { button11push = 1; }
-      // Setting the LEDs to opposite state to turn them on or off
-      // Turn off previous two, turn on next two
-      LED33 = !LED33;  // OFF
-      LED30 = !LED30;  // ON
-      LED17 = !LED17;  // OFF
-      LED14 = !LED14;  // ON
+
+      if (ledmode < 5)
+      {
+        // Delay controls speed
+        mDelaymS(40 * ledmode);
+        // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
+        // If we see button push set button push flag
+        if (BUTTON11 == 0) { button11push = 1; }
+        // Turn off previous two, turn on next two
+        LED33 = 0;  // OFF
+        LED30 = 1;  // ON
+        LED17 = 0;  // OFF
+        LED14 = 1;  // ON
+        // Delay controls speed
+      	mDelaymS(40 * ledmode);
+        // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
+        // If we see button push set button push flag
+        if (BUTTON11 == 0) { button11push = 1; }
+        // Turn off previous two, turn on next two
+        LED30 = 0;  // OFF
+        LED31 = 1;  // ON
+        LED14 = 0;  // OFF
+        LED15 = 1;  // ON
+        // Delay controls speed
+        mDelaymS(40 * ledmode);
+        // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
+        // If we see button push set button push flag
+        if (BUTTON11 == 0) { button11push = 1; }
+        // Turn off previous two, turn on next two
+        LED31 = 0;  // OFF
+        LED32 = 1;  // ON
+        LED15 = 0;  // OFF
+        LED16 = 1;  // ON
+        // Delay controls speed
+        mDelaymS(40 * ledmode);
+        // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
+        // If we see button push set button push flag
+        if (BUTTON11 == 0) { button11push = 1; }
+        // Turn off previous two, turn on next two
+        LED32 = 0;  // OFF
+        LED33 = 1;  // ON
+        LED16 = 0;  // OFF
+        LED17 = 1;  // ON
+      }
+
+      if (ledmode == 5)
+      {
+        // Delay controls speed
+        mDelaymS(300);
+        // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
+        // If we see button push set button push flag
+        if (BUTTON11 == 0) { button11push = 1; }
+        // Turn ALL ON
+        LED30 = 1;  // ON
+        LED31 = 1;  // ON
+        LED32 = 1;  // ON
+        LED33 = 1;  // ON
+        LED14 = 1;  // ON
+        LED15 = 1;  // ON
+        LED16 = 1;  // ON
+        LED17 = 1;  // ON
+        // Delay controls speed
+        mDelaymS(300);
+        // Button starts as TRUE 1 and pulls down to FALSE 0 when pushed
+        // If we see button push set button push flag
+        if (BUTTON11 == 0) { button11push = 1; }
+        // Turn ALL OFF
+        LED30 = 0;  // OFF
+        LED31 = 0;  // OFF
+        LED32 = 0;  // OFF
+        LED33 = 0;  // OFF
+        LED14 = 0;  // OFF
+        LED15 = 0;  // OFF
+        LED16 = 0;  // OFF
+        LED17 = 0;  // OFF
+      }
+
       // If button was pushed during the cycle above then flag should be set
       if (button11push == 1)
       {
-        // Increase delay value
-        delayvalue = delayvalue + 50;
+        // Increase LED Mode value
+        ledmode = ledmode + 1;
+        // Check if LED Mode value is beyond max value and if so set to min value
+        if (ledmode > 5) { ledmode = 1; }
         // Reset button push flag
         button11push = 0;
-        // Check if delay is beyond max value and if so set to min value
-        if (delayvalue > DELAYMAX) { delayvalue = DELAYMIN; }
       }
 
     }

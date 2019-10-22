@@ -1,7 +1,7 @@
-# BSidesDFW_2019_Badge
+# BSidesDFW_2019_Akira_Badge
 
-This is where all the files for the BSidesDFW 2019 Badge will be stored.  
-This includes code and art and cab and fab files.  All the things.
+This is where all the files for the BSidesDFW 2019 Akira Badge will be stored.  
+This includes code and art and cad and fab files.  All the things.
 
 ## File Structure
 
@@ -14,9 +14,9 @@ This is the file structure of this repository
   * ./CH552G_dev_board/ - KiCad 5.x project folder for the CH552G development board
 * [/code/](./code/) - Code for programming the badge
   * ./BSidesDFW_badge/ - Code for the BSidesDFW_2019_Badge
-  * ./ugly_dev_board/ - Code for the Ugly Dev Board
-  * ./CH552T_dev_board/ - Code for the CH552T dev board designed by WrickertH552
   * ./CH552G_dev_board/ - Code for the CH552G dev board
+  * ./CH552T_dev_board/ - Code for the CH552T dev board designed by WrickertH552    
+  * ./ugly_dev_board/ - Code for the Ugly Dev Board CH552 Proof of Concept
   * ./include/ - Includes for the 55X chipset used in all the above
 * [/docs/](./docs/) - Documentation created by this project related to the badge
 * [/graphics/](./graphics/) - Artwork and other graphics created by this project for the badge

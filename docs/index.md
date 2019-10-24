@@ -19,6 +19,8 @@ Please allow me to be your guide.
 
 ---
 
+![Prototype Image](BSidesDFW_2019-Proto.gif)
+
 # Badge Details
 
 ## CH552G Micro-Controller

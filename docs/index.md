@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Hero Image](https://raw.githubusercontent.com/gowenrw/DFW_InfoSec_Badge_2018/master/docs/DFW_Hacker_Badge_Banner.jpg)
+![Hero Image](BadgeAnimated.gif)
 
 # AKIRA Badge
 

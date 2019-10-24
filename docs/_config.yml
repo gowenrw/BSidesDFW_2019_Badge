@@ -1,1 +1,4 @@
-theme: jekyll-theme-hacker
+theme: jekyll-theme-midnight
+title: AKIRA Badge
+description: BSidesDFW 2019 AKIRA Badge Repository
+show_downloads: true

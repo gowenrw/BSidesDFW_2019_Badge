@@ -79,10 +79,31 @@ So, I decided to use them all and make LED color the differentiation between the
 
 ## Crypto Challenge
 
-The AKIRA Badge includes a cryptography challenge that will not be detailed here until after the conference is over and the winner is announced.
-Be assured that the firmware code and other files included here will not provide any hints to solving this challenge.
+The AKIRA Badge included a cryptography challenge that was designed to be solved during the one day BSidesDFW 2019 conference.  
 
-There will be a talk about the Crypto Challenge in the BSidesDFW Hardware Hacking Village at 1:30PM where either the winner will be revealed followed by a detailed explanation of challenge, or if it still unsolved a major hint will be dropped.
+Thanks to all who participated in this challenge!
+
+While the solution page is still active for those who are attempting to solve it after the con, the Crypto Challenge is officially over and we will not be registering new solvers.
+
+Here is registered winner and the list of those who solved it during the BSidesDFW conference:
+
+| Timestamp	| Name/Handle |
+| --------- | --------- |
+| 11/2/2019 09:42:15	| Malcolm @leetnet - WINNER |
+| 11/2/2019 10:26:40	| jeff morales |
+| 11/2/2019 11:34:17	| @hkhanes |
+| 11/2/2019 11:34:28	| hiccup |
+| 11/2/2019 11:34:39	| @mcwtravis |
+| 11/2/2019 14:02:52	| monopole |
+| 11/2/2019 14:12:15	| zarak |
+| 11/2/2019 14:18:32	| Wheatley |
+| 11/2/2019 14:33:49	| M0r1 |
+| 11/2/2019 14:34:54	| Lowkey |
+| 11/2/2019 14:35:42	| Aggie_r3c0n |
+| 11/2/2019 15:19:55	| Spdrstar |
+| 11/2/2019 17:31:32	| 17:31 |
+
+[Click this link for details about the cryptography challenge including the complete solution](crypto.html).
 
 ## Sponsor
 

@@ -15,6 +15,7 @@ This is the file structure of this repository
     * Reference to his CH552T dev board here: https://github.com/wrickert/CH552
   * [/code/CH552G_dev_board/](/code/CH552G_dev_board/) - Code for the CH552G dev board designed by [@alt_bier](https://twitter.com/alt_bier)
     * Reference to the CH552G dev board here: [/eda/CH552G_dev/](/eda/CH552G_dev/)
+  * [/code/leetnet/](/code/leetnet/) - This contains code provided by @leetnet to hack the badge.
   * [/code/include/](/code/include/) - Includes for the 55X chipset used in all the above
 
 ## General Notes

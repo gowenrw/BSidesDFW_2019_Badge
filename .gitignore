@@ -88,9 +88,9 @@ Thumbs.db
 *.app
 *.i*86
 *.x86_64
-*.hex
+#*.hex
 *.com
-*.bin
+#*.bin
 *.asm
 
 # Debug files
